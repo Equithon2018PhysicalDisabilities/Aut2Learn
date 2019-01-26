@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Equithon</string>
+    <string name="title_activity_trophy">TrophyActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_scoreboard">Scoreboard</string>
+</resources>

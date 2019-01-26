@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FrontScreenActivity"
+    >
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+    <com.jcminarro.roundkornerlayout.RoundKornerLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:corner_radius="10dp"
+        android:layout_marginBottom="16dp">
+
+
+            <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/roundedimage"
+            android:scaleType="center"
+            android:src="@drawable/screenshot" />
+    </com.jcminarro.roundkornerlayout.RoundKornerLinearLayout>
+
+        <com.jcminarro.roundkornerlayout.RoundKornerLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:corner_radius="10dp"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="0dp"
+                android:src="@drawable/full"
+                android:scaleType="center"/>
+    </com.jcminarro.roundkornerlayout.RoundKornerLinearLayout>
+        <com.jcminarro.roundkornerlayout.RoundKornerLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:corner_radius="10dp"
+            android:layout_marginBottom="16dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:src="@drawable/talk"
+            android:scaleType="center"/>
+        </com.jcminarro.roundkornerlayout.RoundKornerLinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+
+
+
+
+</LinearLayout>
