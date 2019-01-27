@@ -25,7 +25,9 @@
         <activity android:name=".FrontScreenActivity" />
         <activity android:name=".SignUpActivity" />
         <activity android:name=".GuardiansPageActivity" />
-        <activity android:name=".ChildProfileActivity" />
+        <activity
+            android:name=".ChildProfileActivity"
+            android:windowSoftInputMode="adjustPan"/>
         <activity
             android:name=".TrophyActivity"
             android:label="@string/title_activity_trophy"></activity>

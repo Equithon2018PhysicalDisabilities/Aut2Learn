@@ -13,5 +13,4 @@
         android:id="@+id/navigation_scoreboard"
         android:icon="@drawable/trophy"
         android:title="Scoreboard" />
-
 </menu>
