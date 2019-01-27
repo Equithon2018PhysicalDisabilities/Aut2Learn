@@ -8,9 +8,11 @@
     android:orientation="vertical"
     android:padding="28dp"
     android:background="@drawable/back">
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -20,143 +22,142 @@
             <ImageView
                 android:layout_width="240dp"
                 android:layout_height="180dp"
-                android:src="@drawable/logo"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="0dp"
                 android:layout_marginBottom="10dp"
-                />
+                android:layout_marginTop="0dp"
+                android:src="@drawable/logo" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-               >
-            <EditText
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:id="@+id/firstname_regis"
-                android:layout_height="wrap_content"
-                android:textColor="@android:color/white"
-                android:padding="16dp"
-                android:layout_margin="8dp"
-                android:shadowColor="@android:color/white"
-                android:inputType="text"
-                android:hint="First Name"
-                android:textAlignment="center"
-                android:background="@drawable/roundedimage"
-                android:textColorHint="@android:color/white"
-                android:backgroundTint="@android:color/white"
-
-                />
+                android:orientation="horizontal">
 
                 <EditText
-                    android:layout_weight="1"
+                    android:id="@+id/firstname_regis"
                     android:layout_width="0dp"
-                    android:id="@+id/lastname_regis"
                     android:layout_height="wrap_content"
-                    android:textColor="@android:color/white"
-                    android:padding="16dp"
                     android:layout_margin="8dp"
-                    android:shadowColor="@android:color/white"
-                    android:inputType="text"
-                    android:hint="Last Name"
-                    android:textAlignment="center"
+                    android:layout_weight="1"
                     android:background="@drawable/roundedimage"
-                    android:textColorHint="@android:color/white"
                     android:backgroundTint="@android:color/white"
+                    android:hint="First Name"
+                    android:inputType="text"
+                    android:padding="16dp"
+                    android:shadowColor="@android:color/white"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white"
+
+                    />
+
+                <EditText
+                    android:id="@+id/lastname_regis"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/roundedimage"
+                    android:backgroundTint="@android:color/white"
+                    android:hint="Last Name"
+                    android:inputType="text"
+                    android:padding="16dp"
+                    android:shadowColor="@android:color/white"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white"
 
                     />
             </LinearLayout>
+
             <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:id="@+id/email_regis"
-                android:textColor="@android:color/white"
-                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:shadowColor="@android:color/white"
-                android:inputType="textEmailAddress"
+                android:background="@drawable/roundedimage"
+                android:backgroundTint="@android:color/white"
                 android:hint="myemail@example.com"
-                android:background="@drawable/roundedimage"
+                android:inputType="textEmailAddress"
+                android:padding="16dp"
+                android:shadowColor="@android:color/white"
+                android:textColor="@android:color/white"
                 android:textColorHint="@android:color/white"
-                android:backgroundTint="@android:color/white"
 
                 />
 
             <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@android:color/white"
                 android:id="@+id/pass1_regis"
-                android:padding="16dp"
-                android:layout_margin="8dp"
-                android:shadowColor="@android:color/white"
-                android:inputType="textPassword"
-                android:hint="Password"
-                android:background="@drawable/roundedimage"
-                android:textColorHint="@android:color/white"
-                android:backgroundTint="@android:color/white"
-                />
-            <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@android:color/white"
-                android:id="@+id/pass2_regis"
-                android:padding="16dp"
                 android:layout_margin="8dp"
-                android:shadowColor="@android:color/white"
-                android:inputType="textPassword"
-                android:hint="Confirm Password"
                 android:background="@drawable/roundedimage"
-                android:textColorHint="@android:color/white"
                 android:backgroundTint="@android:color/white"
-                />
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="16dp"
+                android:shadowColor="@android:color/white"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+
+            <EditText
+                android:id="@+id/pass2_regis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/roundedimage"
+                android:backgroundTint="@android:color/white"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:padding="16dp"
+                android:shadowColor="@android:color/white"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
 
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:shadowColor="@android:color/white"
-                android:textColor="#ffffff"
                 android:buttonTint="@android:color/white"
+                android:padding="8dp"
+                android:shadowColor="@android:color/white"
                 android:text="Show Password"
-                android:padding= "8dp"/>
+                android:textColor="#ffffff" />
+
             <ProgressBar
-                android:visibility="gone"
+                android:id="@+id/progress_signup"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/progress_signup"
                 android:layout_gravity="center"
-                />
+                android:visibility="gone" />
 
             <Button
                 android:id="@+id/signUpaccount"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Sign up"
-                android:background="@drawable/rounded_button"
-                android:textColor="#acade4"
                 android:layout_marginBottom="12dp"
-                android:clickable="true"
                 android:layout_marginTop="12dp"
-                android:textSize="18dp"
-                />
+                android:background="@drawable/rounded_button"
+                android:clickable="true"
+                android:text="Sign up"
+                android:textColor="#acade4"
+                android:textSize="18dp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_gravity="center" >
+                android:layout_gravity="center"
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/loginFromSignup"
+                    style="@style/Base.TextAppearance.AppCompat.Body2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:paddingTop="8dp"
                     android:text="Already have an account? Log In."
-                    style="@style/Base.TextAppearance.AppCompat.Body2"
-                    android:textStyle="italic"
-                    android:textColor="#ffffff" />
+                    android:textColor="#ffffff"
+                    android:textStyle="italic" />
 
             </LinearLayout>
 

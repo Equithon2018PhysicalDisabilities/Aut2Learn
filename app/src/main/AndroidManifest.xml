@@ -28,7 +28,11 @@
         <activity android:name=".ChildProfileActivity" />
         <activity
             android:name=".TrophyActivity"
-            android:label="@string/title_activity_trophy"></activity>
+            android:label="@string/title_activity_trophy" />
+        <activity
+            android:name=".BedtimeRoutine"
+            android:label="@string/title_activity_bedtime_routine"
+            android:theme="@style/FrontPage"></activity>
     </application>
 
 </manifest>

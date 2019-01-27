@@ -9,10 +9,29 @@
     android:background="@android:color/white">
 
     <FrameLayout
+        android:id="@+id/fragment_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/fragment_container">
+        tools:layout_editor_absoluteX="468dp"
+        tools:layout_editor_absoluteY="27dp">
 
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/trophy" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="191dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/trophy_2" />
     </FrameLayout>
 
     <android.support.design.widget.BottomNavigationView

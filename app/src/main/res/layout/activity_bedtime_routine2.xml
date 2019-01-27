@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BedtimeRoutine"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <com.jcminarro.roundkornerlayout.RoundKornerLinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:corner_radius="10dp"
+                android:layout_marginBottom="16dp">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rszbedtimeillustration"
+                    android:scaleType="center"
+                    android:src="@drawable/rszbedtimeillustration" />
+            </com.jcminarro.roundkornerlayout.RoundKornerLinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Q: Put the bedtime routine in order"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:textSize="40px"/>
+
+            <com.jcminarro.roundkornerlayout.RoundKornerLinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:corner_radius="10dp"
+                android:layout_marginBottom="16dp">
+
+            </com.jcminarro.roundkornerlayout.RoundKornerLinearLayout>
+            <com.jcminarro.roundkornerlayout.RoundKornerLinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:corner_radius="10dp"
+                android:layout_marginBottom="16dp">
+
+            </com.jcminarro.roundkornerlayout.RoundKornerLinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</LinearLayout>
