@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -22,13 +22,23 @@
         android:layout_marginBottom="16dp">
 
 
-            <ImageView
+        <ImageView
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
             android:background="@drawable/roundedimage"
             android:scaleType="center"
-            android:src="@drawable/screenshot" />
+            android:src="@drawable/screenshot" >
+        </ImageView>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="BEDTIME ROUTINE"
+            android:textAlignment="center"
+            android:textSize="40px"
+            android:textStyle="bold"
+            />
+
     </com.jcminarro.roundkornerlayout.RoundKornerLinearLayout>
 
         <com.jcminarro.roundkornerlayout.RoundKornerLinearLayout
@@ -44,6 +54,14 @@
                 android:layout_height="0dp"
                 android:src="@drawable/full"
                 android:scaleType="center"/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="SITUATIONAL GAMES"
+                android:textAlignment="center"
+                android:textSize="40px"
+                android:textStyle="bold"
+                />
     </com.jcminarro.roundkornerlayout.RoundKornerLinearLayout>
         <com.jcminarro.roundkornerlayout.RoundKornerLinearLayout
             android:layout_width="wrap_content"
@@ -51,18 +69,41 @@
             android:orientation="vertical"
             app:corner_radius="10dp"
             android:layout_marginBottom="16dp">
+
         <ImageView
             android:layout_width="wrap_content"
             android:layout_weight="1"
             android:layout_height="0dp"
             android:src="@drawable/talk"
             android:scaleType="center"/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="GESTURE GAMES"
+                android:textAlignment="center"
+                android:textSize="40px"
+                android:textStyle="bold"
+                android:paddingBottom="100px"
+                />
         </com.jcminarro.roundkornerlayout.RoundKornerLinearLayout>
 
     </LinearLayout>
 </ScrollView>
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:background="@color/colorPrimary"
+        app:itemIconTint="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:itemTextColor="#ffff"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/navigation">
+    </android.support.design.widget.BottomNavigationView>
 
 
 
-
-</LinearLayout>
+</android.support.constraint.ConstraintLayout>
