@@ -22,13 +22,23 @@
         android:layout_marginBottom="16dp">
 
 
-            <ImageView
+        <ImageView
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
             android:background="@drawable/roundedimage"
             android:scaleType="center"
-            android:src="@drawable/screenshot" />
+            android:src="@drawable/screenshot" >
+        </ImageView>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="BEDTIME ROUTINE"
+            android:textAlignment="center"
+            android:textSize="40px"
+            android:textStyle="bold"
+            />
+
     </com.jcminarro.roundkornerlayout.RoundKornerLinearLayout>
 
         <com.jcminarro.roundkornerlayout.RoundKornerLinearLayout
@@ -44,6 +54,14 @@
                 android:layout_height="0dp"
                 android:src="@drawable/full"
                 android:scaleType="center"/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="SITUATIONAL GAMES"
+                android:textAlignment="center"
+                android:textSize="40px"
+                android:textStyle="bold"
+                />
     </com.jcminarro.roundkornerlayout.RoundKornerLinearLayout>
         <com.jcminarro.roundkornerlayout.RoundKornerLinearLayout
             android:layout_width="wrap_content"
@@ -51,12 +69,22 @@
             android:orientation="vertical"
             app:corner_radius="10dp"
             android:layout_marginBottom="16dp">
+
         <ImageView
             android:layout_width="wrap_content"
             android:layout_weight="1"
             android:layout_height="0dp"
             android:src="@drawable/talk"
             android:scaleType="center"/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="GESTURE GAMES"
+                android:textAlignment="center"
+                android:textSize="40px"
+                android:textStyle="bold"
+                android:paddingBottom="100px"
+                />
         </com.jcminarro.roundkornerlayout.RoundKornerLinearLayout>
 
     </LinearLayout>
