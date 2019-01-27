@@ -19,6 +19,7 @@ public class FrontScreenActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        overridePendingTransition(R.anim.fadein, R.anim.fadeout);
         setContentView(R.layout.activity_front_screen);
 
         mBottomNav = (BottomNavigationView) findViewById(R.id.navigation);
@@ -61,8 +62,7 @@ public class FrontScreenActivity extends AppCompatActivity {
         // init corresponding fragment
         switch (item.getItemId()) {
             case R.id.navigation_home:
-//                startActivity(new Intent(FrontScreenActivity.this, SignUpActivity.class));
-//                frag = MenuFragment.newInstance(getString(R.string.title_home));
+//                startActivity(new Intent(FrontScreenActivity.this, FrontScreenActivity.class));
                 break;
             case R.id.navigation_profile:
                 startActivity(new Intent(FrontScreenActivity.this, ChildProfileActivity.class));
